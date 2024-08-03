@@ -29,8 +29,11 @@ A Next.js application to display real-time cryptocurrency data fetched from a Mo
 2. **Install Dependencies**
 
     ```bash
+    // from root directory
     cd frontend
     npm install
+
+    // from root directory
     cd backend
     npm install
     ```
@@ -58,12 +61,14 @@ A Next.js application to display real-time cryptocurrency data fetched from a Mo
 5. **Start the Development Server**
    Run the frontend service from /frontend directory
     ```bash
+    // from root directory
     cd frontend 
     npm run dev
     ```
 
     Run the backend service from /backend directory
     ```bash
+    // from root directory
     cd backend 
     npm run dev
     ```
