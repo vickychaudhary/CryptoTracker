@@ -67,14 +67,14 @@ const Tables: React.FC<TablesProps> = ({ data }) => {
                                             <Image alt="CRYPTO" src={item.image} width={30} height={30} unoptimized />
                                         </td> */}
                                         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left text-white flex">
-                                            <Image alt="CRYPTO" src={item.image} width={25} height={25} unoptimized className="mr-3" />
+                                            <Image alt="CRYPTO" src={item?.image} width={25} height={25} unoptimized className="mr-3" />
                                             <div>{item.name}</div>
                                         </td>
                                         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left text-white">
-                                            <span className="text-lg">$</span>{(item.rate).toFixed(4)}
+                                            <span className="text-lg">$</span>{(item.rate)?.toFixed(4)}
                                         </td>
                                         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left text-white">
-                                            <span className="text-lg">$</span>{(item.alltimeHighUSD).toFixed(4)}
+                                            <span className="text-lg">$</span>{(item.alltimeHighUSD)?.toFixed(4)}
                                         </td>
                                         <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-md whitespace-nowrap p-4 text-left text-white">
                                             <span className="text-lg">$</span>{formatNumber(item.cap)}

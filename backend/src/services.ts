@@ -5,13 +5,13 @@ import mongoose from "mongoose";
 dotenv.config();
 
 export async function fetchAndSaveCryptoData() {
-  // const apiKey = process.env.LIVECOINWATCH_API_KEY;
+  const apiKey = process.env.LIVECOINWATCH_API_KEY;
   const options = {
     method: "POST",
     url: "https://api.livecoinwatch.com/coins/list",
     headers: {
       "content-type": "application/json",
-      "x-api-key": "e8a8a7db-93ff-4988-a6ee-f485600dcec7",
+      "x-api-key": apiKey,
     },
     data: {
       currency: "USD",
